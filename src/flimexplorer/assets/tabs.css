@@ -1,0 +1,34 @@
+/* ================================
+   Dash Tabs — Dark Theme Override
+   Works for both class naming styles:
+   - .dash-tab / .dash-tab--selected
+   - .tab / .tab--selected
+   ================================ */
+
+/* base tab */
+.dash-tab, .tab {
+  background-color: #1e1e1e !important;
+  color: #cccccc !important;
+  border: 1px solid #333 !important;
+  padding: 8px 14px !important;
+  font-weight: 500 !important;
+}
+
+/* hover */
+.dash-tab:hover, .tab:hover {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+/* selected tab */
+.dash-tab--selected, .tab--selected {
+  background-color: #0d6efd !important;  /* Bootstrap primary */
+  color: #ffffff !important;
+  border-color: #0d6efd !important;
+  font-weight: 600 !important;
+}
+
+/* kill the white underline / borders some versions add */
+.dash-tab::after, .tab::after {
+  border: none !important;
+}

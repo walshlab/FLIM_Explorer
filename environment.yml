@@ -1,0 +1,39 @@
+name: flimexplorer
+channels:
+  - conda-forge
+channel_priority: strict
+dependencies:
+  - python=3.10
+
+  # Core numerics / tables (semi-locked)
+  - numpy>=2.2,<2.4
+  - pandas>=2.3,<2.4
+  - scipy>=1.15,<1.16
+
+  # Dash app stack (semi-locked)
+  - dash>=3.3,<3.4
+  - dash-bootstrap-components>=2.0,<2.1
+  - dash-ag-grid>=33.3,<34
+  - plotly>=6.5,<6.6
+
+  # Plot export + figures
+  - matplotlib>=3.10,<3.11
+
+  # Images / masks
+  - scikit-image>=0.25,<0.26
+  - imageio>=2.37,<2.38
+  - pillow>=12,<13
+  - tifffile>=2025.2,<2026
+
+  # Excel / IO
+  - openpyxl>=3.1,<3.2
+  - xlrd>=2.0.1,<2.1
+
+  # Stats
+  - statsmodels>=0.14,<0.15
+  - patsy>=1.0,<1.1
+
+  - pip>=25,<26
+  - pip:
+      # Kaleido is most reliable via pip for cross-OS availability
+      - kaleido==1.2.0

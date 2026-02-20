@@ -1,0 +1,36 @@
+:root{
+  --bg:#0b0f1a;
+  --card:#111827;
+  --card2:#0f172a;
+  --border:rgba(255,255,255,.08);
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+body{ background:var(--bg)!important; color:var(--text)!important; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+hr{ border-color:var(--border)!important; }
+
+.shadow-sm{ box-shadow: 0 12px 30px rgba(0,0,0,.35)!important; }
+.card{ border:1px solid var(--border)!important; border-radius:16px!important; background:var(--card)!important; }
+.card-header{ background:var(--card2)!important; border-bottom:1px solid var(--border)!important; font-weight:600; }
+.card-body{ background:var(--card)!important; }
+
+.Select-control, .Select-menu-outer, .Select-placeholder, .Select-value-label{
+  background:var(--card2)!important; color:var(--text)!important;
+}
+.Select-control{ border:1px solid var(--border)!important; border-radius:12px!important; }
+input:not([type="checkbox"]):not([type="radio"]) {
+  background: var(--card2) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+  border-radius: 12px !important;
+}
+.dash-table-container .dash-spreadsheet-container{
+  background:var(--card)!important;
+}
+.dash-table-container .dash-header{
+  background:var(--card2)!important; color:var(--text)!important;
+}
+.dash-table-container .dash-cell{
+  background:var(--card)!important; color:var(--text)!important; border-color:var(--border)!important;
+}

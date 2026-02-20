@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flimexplorer"
+version = "0.1.0"
+description = "Interactive GUI for object-based visualization and analysis of FLIM data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name="Blanche ter Hofstede"}]
+
+dependencies = [
+  "dash>=2.14",
+  "dash-bootstrap-components>=1.5",
+  "dash-ag-grid>=2.4",
+  "pandas",
+  "numpy",
+  "plotly",
+  "openpyxl",
+  "tifffile",
+  "scipy",
+  "scikit-image",
+  "kaleido",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "black",
+]
+
+[project.scripts]
+flimexplorer = "flimexplorer.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
