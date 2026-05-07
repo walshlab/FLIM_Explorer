@@ -7,7 +7,7 @@ Interactive Dash-based tools for analyzing FLIM datasets.
 Clone the repository and install in editable mode:
 
 ```bash
-git clone https://github.com/YOURUSERNAME/flim-explorer.git
+git clone https://github.com/walshlab/flim-explorer.git
 cd flim-explorer
 pip install -e .
 
